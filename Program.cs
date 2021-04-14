@@ -11,7 +11,7 @@ namespace Balkezesek
     {
         static void Main(string[] args)
         {
-            //Név: Uhrin Ákos
+            //Név: Uhrin Ákos 
 
             string path = "balkezesek.csv";
             List<Balkezesek> balkezesek = new List<Balkezesek>();
@@ -25,6 +25,9 @@ namespace Balkezesek
             // 1. feladat
             int versenyzőkSzáma = balkezesek.Count;
             Console.WriteLine($"{versenyzőkSzáma} versenyzőről van adatunk.");
+            
+            // 2. feladat
+
 
             Console.ReadLine();
         }

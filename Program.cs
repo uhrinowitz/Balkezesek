@@ -24,9 +24,29 @@ namespace Balkezesek
 
             // 1. feladat
             int versenyzőkSzáma = balkezesek.Count;
-            Console.WriteLine($"{versenyzőkSzáma} versenyzőről van adatunk.");
-            
+            Console.WriteLine($"1. feladat: {versenyzőkSzáma} versenyzőről van adatunk.");
+
             // 2. feladat
+            List<Balkezesek> elsők = new List<Balkezesek>();
+            Console.WriteLine("2. feladat: 1980-ban lépett pályára:");
+            foreach (Balkezesek balkezes in balkezesek)
+            {
+                if (balkezes.Első.Contains("1980"))
+                {
+                    elsők.Add(balkezes);
+                    Console.WriteLine($"\t{balkezes.Név}");
+                }
+            }
+
+            // 3. feladat
+            string bekértNév = Console.ReadLine();
+            foreach (Balkezesek balkezes in balkezesek)
+            {
+                if (balkezes.Név == bekértNév)
+                {
+                    Console.WriteLine($"3. feladat: {balkezes.Név} magassága: {balkezes.Magasság*2.54} cm.");
+                }
+            }
 
 
             Console.ReadLine();
